@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#btn1').click(function(){
+					$('#test').load('/expressapp/ajax/test.txt')
+				})
+			})
+		</script>
+		<h3 id="test">点击下面的按钮,通过Jquery Ajax 改变这段文本</h3>
+		<button id="btn1" type="button">获得外部的内容</button>
+		
+	</body>
+</html>
